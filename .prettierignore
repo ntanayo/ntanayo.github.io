@@ -1,0 +1,16 @@
+node_modules
+dist
+.cache
+.git
+public
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.ico
+coverage
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+*.log

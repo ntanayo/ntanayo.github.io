@@ -1,0 +1,64 @@
+---
+import { site } from '../data/site';
+const { title } = site;
+const page = Astro.props as { title?: string; description?: string; canonical?: string };
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: site.title,
+  url: site.url,
+  description: site.description,
+});
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{page.title ?? title}</title>
+    <meta name="description" content={page.description ?? site.description} />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="alternate" type="application/rss+xml" title={site.title} href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Open Graph and Twitter Card -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={page.title ?? site.title} />
+    <meta property="og:description" content={page.description ?? site.description} />
+    <meta property="og:url" content={page.canonical ?? site.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- JSON-LD for basic organization/site -->
+    <script type="application/ld+json" src="/site-schema.json"></script>
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        <div class="site-title"><a href="/">{site.title}</a></div>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/posts/">Posts</a>
+          <a href="/about">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="site-footer">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+          <div>
+            &copy; {new Date().getFullYear()}
+            {site.author.name} — <span style="color:#9fb1c9">{site.description}</span>
+          </div>
+          <div style="margin-top:.5rem">Built with Astro • <a href="/rss.xml">RSS</a></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

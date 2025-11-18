@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+
+type PostMeta = {
+  title: string;
+  date: string;
+  slug: string;
+  draft?: boolean;
+  tags?: string[];
+  categories?: string[];
+};
+
+const modules = import.meta.glob('../../posts/*.md', { eager: true }) as Record<
+  string,
+  { frontmatter: PostMeta; default: any }
+>;
+const posts = Object.values(modules).map((m) => ({ ...m.frontmatter, Component: m.default }));
+const slug = Astro.params.slug as string;
+const post = posts.find((p) => p.slug === slug);
+if (!post) {
+  throw new Error('Post not found');
+}
+
+const Content = post.Component;
+
+// Generate static paths for all posts so Astro can prerender the dynamic route.
+export async function getStaticPaths() {
+  const mods = import.meta.glob('../../posts/*.md', { eager: true }) as Record<
+    string,
+    { frontmatter: PostMeta }
+  >;
+  const all: PostMeta[] = Object.values(mods)
+    .map((m) => m.frontmatter)
+    .filter((p) => !p.draft);
+  return all.map((p) => ({ params: { slug: p.slug } }));
+}
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={post.title}
+  description={`${post.title} — ${site.description}`}
+  canonical={`${site.url.replace(/\/$/, '')}/posts/${post.slug}/`}
+>
+  <article>
+    <h1>{post.title}</h1>
+    <p><small>{new Date(post.date).toISOString().slice(0, 10)}</small></p>
+    <Content />
+  </article>
+
+  <!-- Utterances comments -->
+  <section id="comments">
+    <script
+      async
+      src="https://utteranc.es/client.js"
+      repo={import.meta.env.SITE_UTTERANCES_REPO || 'OWNER/REPO'}
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"></script>
+    <p style="font-size:0.9rem;color:#666;margin-top:0.5rem;">
+      Install Utterances on the repository and set `site.utterancesRepo` in `src/data/site.ts`.
+    </p>
+  </section>
+</BaseLayout>

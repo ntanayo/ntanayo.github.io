@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+import type { AstroGlobal } from 'astro';
+const postsImport = import.meta.glob('../../posts/*.md', { eager: true }) as Record<string, any>;
+
+const posts = Object.values(postsImport)
+  .map((p: any) => ({
+    url: p.url || p.meta?.slug || p.frontmatter?.slug,
+    frontmatter: p.frontmatter || p.meta || {},
+    Content: p.default,
+  }))
+  .filter((p) => !p.frontmatter?.draft)
+  .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
+---
+
+<BaseLayout title={`Posts | ${site.title}`}>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>All Posts</h1>
+        <p>Latest writing from {site.title}. Browse by date or tag.</p>
+      </div>
+    </section>
+
+    <section class="posts-grid">
+      {
+        posts.map((p: any) => (
+          <article class="post-card">
+            <div class="post-meta">{new Date(p.frontmatter.date).toLocaleDateString()}</div>
+            <h3>
+              <a href={p.url}>{p.frontmatter.title}</a>
+            </h3>
+            <p style="color:var(--muted);margin-top:.5rem">{p.frontmatter.description || ''}</p>
+            <div class="post-tags">
+              {(p.frontmatter.tags || []).map((t: string) => (
+                <span class="tag">{t}</span>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © {new Date().getFullYear()}
+    {site.author.name}
+  </footer>
+</BaseLayout>

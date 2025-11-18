@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+
+type PostMeta = {
+  title: string;
+  date: string;
+  slug: string;
+  draft?: boolean;
+  tags?: string[];
+  categories?: string[];
+};
+
+const modules = import.meta.glob('../posts/*.md', { eager: true }) as Record<
+  string,
+  { frontmatter: PostMeta }
+>;
+const posts: PostMeta[] = Object.values(modules)
+  .map((m) => m.frontmatter)
+  .filter((p) => !p.draft)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>{site.title}</h1>
+      <p>{site.description}</p>
+      <p style="margin-top:1rem">
+        <a href="/posts/" style="color:var(--accent);text-decoration:none">Browse posts →</a>
+      </p>
+    </div>
+    <aside style="padding:1rem">
+      <div style="background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px">
+        <strong>About</strong>
+        <p style="color:var(--muted);margin:0.5rem 0">
+          A short personal blog exploring ideas, books, and technical notes.
+        </p>
+        <p style="margin-top:.5rem"><a href="/about" style="color:var(--accent)">Learn more</a></p>
+      </div>
+    </aside>
+  </section>
+
+  <section>
+    <h2 style="margin-top:1.25rem">Recent posts</h2>
+    <div class="posts-grid">
+      {
+        posts.map((post) => (
+          <article class="post-card">
+            <div class="post-meta">{new Date(post.date).toISOString().slice(0, 10)}</div>
+            <h3>
+              <a href={`/posts/${post.slug}/`}>{post.title}</a>
+            </h3>
+            <div class="post-tags">
+              {(post.tags || []).map((t) => (
+                <span class="tag">{t}</span>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

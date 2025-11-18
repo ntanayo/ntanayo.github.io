@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Home
+---
+
+<h1>{{ site.title }}</h1>
+<p>{{ site.description }}</p>
+
+<ul>
+  {% for post in collections.posts %}
+  <li>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a> — {{ post.date | date: "%Y-%m-%d" }}
+  <!-- Deprecated Eleventy index. The Astro site uses `src/pages/index.astro`. You can remove this file. -->
+  {% endfor %}
