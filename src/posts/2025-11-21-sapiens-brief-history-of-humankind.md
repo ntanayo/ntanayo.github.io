@@ -16,11 +16,17 @@ Why this book matters
 
 Small surprises that change perspective
 
+![Agriculture and farming](https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80)
+_Photo by Mark Stebnicki on Unsplash_
+
 - Food for thought: hunter-gatherers didn't necessarily live harder lives than early farmers. Agriculture multiplied calories and people, but not always happiness.
 - Cooperation at scale: the cognitive revolution (≈70,000 years ago) gave Sapiens the ability to gossip, to tell shared stories — and that unlocked cooperation beyond kin.
 - The modern twist: science and capitalism form a feedback loop. Science feeds industry and industry funds science; the result is unprecedented technological and ecological change.
 
 Three ideas worth remembering
+
+![Global cooperation](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80)
+_Photo by NASA on Unsplash_
 
 1. Shared fictions are real power: Money and corporations are "real" because we treat them as real. Change the story, and the reality shifts.
 2. History is not destiny: large-scale patterns (empires, religions, markets) arise from choices and stories — they can change.

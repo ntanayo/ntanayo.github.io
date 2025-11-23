@@ -36,7 +36,9 @@ const posts: PostMeta[] = Object.values(modules)
         <p style="color:var(--muted);margin:0.5rem 0">
           A short personal blog exploring ideas, books, and technical notes.
         </p>
-        <p style="margin-top:.5rem"><a href="/about" style="color:var(--accent)">Learn more</a></p>
+        <p style="margin-top:.5rem">
+          <a href="/about" style="color:var(--accent)">Learn more</a>
+        </p>
       </div>
     </aside>
   </section>
@@ -49,7 +51,7 @@ const posts: PostMeta[] = Object.values(modules)
           <article class="post-card">
             <div class="post-meta">{new Date(post.date).toISOString().slice(0, 10)}</div>
             <h3>
-              <a href={`/posts/${post.slug}/`}>{post.title}</a>
+              <a href={`/ntanayo/posts/${post.slug}/`}>{post.title}</a>
             </h3>
             <div class="post-tags">
               {(post.tags || []).map((t) => (

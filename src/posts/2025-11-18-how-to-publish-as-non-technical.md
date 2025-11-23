@@ -9,6 +9,9 @@ draft: false
 
 This guide shows, step-by-step, how a non-technical person can maintain and publish posts to this GitHub-hosted blog.
 
+![Person writing on laptop](https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80)
+_Photo by Andrew Neel on Unsplash_
+
 Overview
 
 - This site publishes automatically when the repository receives changes on `main` (a build runs and deploys to GitHub Pages).
@@ -32,6 +35,9 @@ draft: false
 
 Step 2 — Write the content
 
+![Markdown editing](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
+_Photo by Florian Olivo on Unsplash_
+
 - Below the front matter, write your post using Markdown (headings, lists, links, images). Keep it simple — the site will render the Markdown for you.
 
 Step 3 — Save and preview locally (optional but recommended)
@@ -44,6 +50,9 @@ Step 3 — Save and preview locally (optional but recommended)
 - Open the address shown in the terminal (usually http://127.0.0.1:3000) and review your post.
 
 Step 4 — Commit and push (publish)
+
+![Git workflow](https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&q=80)
+_Photo by Yancy Min on Unsplash_
 
 - Use your normal Git workflow (this could be Git on the command line or your Git GUI). Example commands:
 
