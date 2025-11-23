@@ -9,6 +9,9 @@ draft: false
 
 This guide covers practical steps to make your blog look and read like a professional technical blog — even if you are not a developer.
 
+![Professional workspace setup](https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80)
+_Photo by Avel Chuklanov on Unsplash_
+
 1. Choose a consistent visual style
 
 - Pick a simple color palette (2–3 colors) and a readable font. Use the built-in layout (`src/layouts/BaseLayout.astro`) as a starting point; add a small `src/styles/` stylesheet for custom tweaks.
@@ -27,6 +30,9 @@ This guide covers practical steps to make your blog look and read like a profess
 
 5. Add social and sharing metadata
 
+![Social media sharing](https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80)
+_Photo by Claudio Schwarz on Unsplash_
+
 - Include Open Graph and Twitter Card metadata so links show nice previews when shared. Update `src/layouts/BaseLayout.astro` to include meta tags using values from your site data.
 
 6. Use a readable format for code
@@ -34,6 +40,9 @@ This guide covers practical steps to make your blog look and read like a profess
 - For technical posts, include syntax-highlighted code blocks. Astro supports many high-quality syntax highlighters with minimal setup.
 
 7. Polish: images, thumbnails, and typography
+
+![Typography and design](https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80)
+_Photo by Adem AY on Unsplash_
 
 - Use consistent image sizes for thumbnails. Optimize images (smaller files) and provide alt text. Consider a subtle max-line-width and larger body text for readability.
 

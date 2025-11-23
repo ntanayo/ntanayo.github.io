@@ -9,6 +9,9 @@ draft: false
 
 This post explains, in plain language, what SEO, Google Analytics (GA4), and Google Tag Manager (GTM) are, and how a non-technical blogger can use them to improve the site.
 
+![Analytics dashboard](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80)
+_Photo by Carlos Muza on Unsplash_
+
 SEO (Search Engine Optimization)
 
 - What it is: SEO is the process of making your content easy for search engines to find and understand.
@@ -20,11 +23,17 @@ SEO (Search Engine Optimization)
 
 Google Analytics (GA4)
 
+![Data visualization](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80)
+_Photo by Luke Chesser on Unsplash_
+
 - What it is: GA4 collects anonymous visitor metrics (how many visitors, which pages they view, which countries they come from).
 - How to enable: replace the placeholder `G-XXXXXXXXXX` in `src/data/site.ts` with your Measurement ID.
 - What to check: after enabling, open the Realtime report to confirm visits and then check Engagement to see which posts get traffic.
 
 Google Tag Manager (GTM)
+
+![Code and tags](https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80)
+_Photo by Zan on Unsplash_
 
 - What it is: GTM is a container for scripts (tags) like Google Analytics, Facebook Pixel, etc. It allows you to add tracking without changing code every time.
 - Non-technical workflow:

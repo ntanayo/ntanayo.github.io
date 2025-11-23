@@ -9,6 +9,9 @@ draft: false
 
 This is an extended, chapter-style summary and guided walk-through of Yuval Noah Harari's "Sapiens: A Brief History of Humankind". The goal is to capture the book's main arguments, evidence Harari uses, and the implications he draws — all paraphrased and organized so you can quickly understand the structure and core ideas.
 
+![Book and reading](https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&q=80)
+_Photo by Thought Catalog on Unsplash_
+
 ## Overview: the book's arc
 
 Harari frames human history around a few major revolutions that reshaped how Homo sapiens think, cooperate, and alter environments. The most important are:
@@ -21,6 +24,9 @@ Harari frames human history around a few major revolutions that reshaped how Hom
 Harari's central thesis is that many of the structures we treat as "real" — like money, nations, corporations, and rights — are shared fictions: intersubjective constructs that exist because many people believe in them. Understanding these fictions helps explain large-scale cooperation and historical transformations.
 
 ## Part 1 — Cognitive Revolution: language, myth, and the power of stories
+
+![Human evolution](https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=800&q=80)
+_Photo by Paweł Czerwiński on Unsplash_
 
 Harari argues that a qualitative change in cognitive ability allowed Homo sapiens to create and communicate complex, flexible stories. Key points:
 
@@ -38,6 +44,9 @@ Where many histories celebrate agriculture as progress, Harari is ambivalent. He
 
 ## Part 3 — The Unification of Humankind: money, empire, religion
 
+![Ancient civilization](https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80)
+_Photo by Giammarco Boscaro on Unsplash_
+
 Harari details the mechanisms by which human groups scale and unify:
 
 - Money as universal trust: money is the most successful shared fiction — a flexible trust system that works across cultures because people agree on its value.
@@ -45,6 +54,9 @@ Harari details the mechanisms by which human groups scale and unify:
 - Universal religions and ideologies: unlike local gods, universalizing belief systems (e.g., Christianity, Islam, Buddhism) can cross ethnic lines and help integrate diverse peoples under shared moral and cosmological frameworks.
 
 ## Part 4 — The Scientific Revolution: the marriage of ignorance and instrument
+
+![Scientific research](https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80)
+_Photo by Artem Podrez on Unsplash_
 
 Harari marks a cultural transformation in which admitting ignorance became the first step toward inquiry. The scientific method's systematic doubt and desire to extract new powers led to astonishing growth in knowledge and capability.
 
