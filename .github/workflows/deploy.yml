@@ -81,8 +81,8 @@ jobs:
       - name: Deploy Preview (Feature Branches)
         # Add your branch name here to test deployment before merging to main
         # Example: if: github.ref == 'refs/heads/ym-style' || github.ref == 'refs/heads/ym-another-feature'
-        if: github.ref == 'refs/heads/ym-style'
-        # if: false # uncomment this when meging branch to main
+        # if: github.ref == 'refs/heads/ym-feat' # # uncomment this when testing on feat branchs
+        if: false # uncomment this when meging branch to main
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
