@@ -18,7 +18,7 @@ const jsonLd = JSON.stringify({
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{page.title ?? title}</title>
     <meta name="description" content={page.description ?? site.description} />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href={`${site.baseurl}/src/styles/main.css`} />
     <link
       rel="alternate"
       type="application/rss+xml"
