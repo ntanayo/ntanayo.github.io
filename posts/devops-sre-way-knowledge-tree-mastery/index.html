@@ -1,0 +1,859 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The DevOps/SRE Way: A Knowledge Tree for Mastery in the Age of AI</title><meta name="description" content="The DevOps/SRE Way: A Knowledge Tree for Mastery in the Age of AI — A blog hosted on GitHub Pages (Astro + TypeScript)"><link rel="alternate" type="application/rss+xml" title="NTanayo" href="/rss.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"><!-- Open Graph and Twitter Card --><meta property="og:type" content="website"><meta property="og:title" content="The DevOps/SRE Way: A Knowledge Tree for Mastery in the Age of AI"><meta property="og:description" content="The DevOps/SRE Way: A Knowledge Tree for Mastery in the Age of AI — A blog hosted on GitHub Pages (Astro + TypeScript)"><meta property="og:url" content="https://ntanayo.github.io/posts/devops-sre-way-knowledge-tree-mastery/"><meta name="twitter:card" content="summary_large_image"><!-- JSON-LD for basic organization/site --><script type="application/ld+json" src="/site-schema.json"></script><style>:root{--bg: #0f1724;--surface: #071028;--card: #0f2433;--muted: #9fb1c9;--accent: #60a5fa;--accent-2: #7dd3fc;--text: #e6eef8;--glass: rgba(255, 255, 255, .03)}*{box-sizing:border-box}body{background:radial-gradient(1200px 600px at 10% 10%,rgba(96,165,250,.03),transparent 10%),linear-gradient(180deg,#041020 0%,var(--bg) 100%);color:var(--text);margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial}.site-container{max-width:1100px;margin:0 auto;padding:2rem}header.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}.site-title{font-weight:700;font-size:1.25rem;color:var(--accent)}.site-title a{color:var(--accent);text-decoration:none}.site-nav a{color:var(--muted);text-decoration:none;margin-left:1rem;padding:.35rem .5rem;border-radius:6px}.site-nav a:hover{color:var(--text);background:#ffffff05}.hero{display:grid;grid-template-columns:1fr;gap:1rem;padding:3rem 0}.hero-inner{background:linear-gradient(135deg,#7dd3fc0a,#60a5fa05);padding:2rem;border-radius:12px;border:1px solid rgba(255,255,255,.02)}.hero h1{margin:0;font-size:2rem}.hero p{color:var(--muted);margin-top:.5rem}.posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1.25rem}.post-card{background:linear-gradient(180deg,#ffffff03,#00000003);padding:1rem;border-radius:12px;border:1px solid var(--glass);box-shadow:0 6px 18px #02061799}.post-card h3{margin:0 0 .5rem;color:var(--accent-2)}.post-card a{color:var(--accent-2);text-decoration:none}.post-card a:hover{text-decoration:underline}.post-meta{font-size:.85rem;color:var(--muted);margin-bottom:.5rem}.post-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}.tag{background:#ffffff05;padding:.25rem .5rem;border-radius:999px;color:var(--muted);font-size:.8rem}footer.site-footer{border-top:1px solid rgba(255,255,255,.03);padding:2rem 0;margin-top:2rem;color:var(--muted)}article img,main img{max-width:100%;height:auto;border-radius:8px;margin:1.5rem 0;box-shadow:0 4px 12px #0000004d}article em,main em{display:block;text-align:center;font-size:.85rem;color:var(--muted);margin-top:-1rem;margin-bottom:1rem;font-style:italic}article h1,article h2,article h3{margin-top:2rem;margin-bottom:1rem;color:var(--text)}article h1{font-size:2rem;color:var(--accent-2)}article h2{font-size:1.5rem;border-bottom:1px solid rgba(255,255,255,.05);padding-bottom:.5rem}article h3{font-size:1.25rem}article p{line-height:1.7;margin:1rem 0}article ul,article ol{line-height:1.7;margin:1rem 0;padding-left:2rem}article li{margin:.5rem 0}article code{background:#ffffff0d;padding:.2rem .4rem;border-radius:4px;font-size:.9em;font-family:Courier New,monospace}article pre{background:#ffffff08;padding:1rem;border-radius:8px;overflow-x:auto;margin:1.5rem 0}article pre code{background:none;padding:0}article a{color:var(--accent);text-decoration:underline}article a:hover{color:var(--accent-2)}@media(min-width:800px){.hero{grid-template-columns:1fr 340px}}@media(max-width:600px){.site-container{padding:1rem}header.site-header{flex-direction:column;align-items:flex-start;gap:1rem}.site-nav{display:flex;gap:.5rem;flex-wrap:wrap}.site-nav a{margin-left:0}.hero{padding:1.5rem 0}.hero-inner{padding:1.5rem}.hero h1{font-size:1.5rem}article h1{font-size:1.75rem}article h2{font-size:1.35rem}article h3{font-size:1.15rem}article img,main img{margin:1rem 0;border-radius:6px}.posts-grid{grid-template-columns:1fr}}
+</style></head> <body> <div class="site-container"> <header class="site-header"> <div class="site-title"><a href="/">NTanayo</a></div> <nav class="site-nav"> <a href="/">Home</a> <a href="/posts/">Posts</a> <a href="/about">About</a> </nav> </header> <main>  <article> <h1>The DevOps/SRE Way: A Knowledge Tree for Mastery in the Age of AI</h1> <p><small>2026-10-19</small></p> <p>Two questions keep coming up:</p>
+<ol>
+<li>Can I become a DevOps engineer or SRE using DevOpsLabs, Killercoda, SadServers, SwitchLab, and maybe Launch School?</li>
+<li>In an era where the best LLMs can do a growing share of a developer’s work, is it even worth learning the craft?</li>
+</ol>
+<p>The short answer to both is <strong>yes — but not by completing a playlist</strong>.</p>
+<p>The longer answer is the subject of this post. I want to take the learning science behind <a href="https://www.justinmath.com/files/the-math-academy-way.pdf">The Math Academy Way</a> — knowledge graphs, mastery learning, deliberate practice, spacing, interleaving, retrieval — and translate it into a concrete, prerequisite-ordered map for DevOps and SRE. Not a timeline. A <strong>tree you can climb</strong>, with <strong>gates you must pass</strong>, and <strong>proof that you actually know the thing</strong> rather than merely recognizing it.</p>
+<p>This is the guide I wish existed when I started collecting tabs, courses, and certifications.</p>
+<hr>
+<h2 id="the-honest-verdict-on-the-sources">The honest verdict on the sources</h2>
+<p>All five sources are useful. None of them is a curriculum by itself. They are <strong>problem sets, gyms, and exam simulators</strong>. The curriculum is the graph that tells you which one to use, when, and why.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Source</th><th>What it is genuinely good for</th><th>What it cannot do alone</th></tr></thead><tbody><tr><td><strong>DevOpsLabs</strong> (<a href="https://devopslabs.dev/">devopslabs.dev</a>)</td><td>Guided rooms plus open “fix the broken server” challenges. Real disposable VMs. A clear zero-to-production roadmap. CKA/CKAD paths and timed exam simulators.</td><td>It is a solo-built product, and room counts change. It is practice, not theory. You still need books/docs and projects.</td></tr><tr><td><strong>Killercoda</strong> (<a href="https://killercoda.com/">killercoda.com</a>)</td><td>Enormous browser-lab catalog: Linux, Docker, Kubernetes, Helm, Argo, Istio, OpenTofu, Prometheus, Grafana, CKS, LFCS, CNPE. Free tier is generous. Check-button validation.</td><td>Quality varies because much content is community-authored. Free sessions are short. It is not a sequenced curriculum.</td></tr><tr><td><strong>SadServers</strong> (<a href="https://sadservers.com/">sadservers.com</a>)</td><td>The best “LeetCode for Linux and DevOps” experience: real broken servers, Fix/Do/Hack scenarios, inspectable <code>check.sh</code>, clues, and a hiring-style assessment model.</td><td>It is troubleshooting-shaped, not syllabus-shaped. Checks can be brittle, and solutions are paywalled.</td></tr><tr><td><strong>SwitchLab</strong> (<a href="https://switchlab.dev/">switchlab.dev</a>)</td><td>Deep networking practice in the browser with vendor CLIs: VLANs, STP, routing, ACLs, OSPF, automation. CCNA and JNCIA paths.</td><td>Networking only. It will not teach you Linux, containers, Kubernetes, IaC, or observability.</td></tr><tr><td><strong>Launch School</strong> (<a href="https://launchschool.com/">launchschool.com</a>)</td><td>Mastery-based software engineering fundamentals with human-graded assessments: programming, networking, databases, system design, cloud infrastructure in the Capstone.</td><td>It is not a DevOps/SRE path. No Kubernetes, Terraform, CI/CD, or observability in the published core. It is also a serious financial and time commitment.</td></tr></tbody></table>
+<p><strong>The verdict:</strong> yes, you can reach employable DevOps/SRE competence with these sources — if you add four things they do not provide:</p>
+<ol>
+<li><strong>Canonical theory</strong> (the books and docs that explain the invariants).</li>
+<li><strong>One real cloud account</strong> (free tier is enough at first).</li>
+<li><strong>A portfolio of systems you built, broke, and fixed</strong>.</li>
+<li><strong>Writing and speaking about what you did</strong> (the teach-back that exposes fake understanding).</li>
+</ol>
+<p>The platforms are the gym. The graph is the coach. The gates are the exams. AI is a training partner that can spot you — and occasionally lie to your face.</p>
+<hr>
+<h2 id="why-finishing-a-course-does-not-produce-mastery">Why “finishing a course” does not produce mastery</h2>
+<p>Most people who stall in DevOps do not stall because they lack resources. They stall because they confuse <strong>familiarity</strong> with <strong>learning</strong>.</p>
+<p>Watching a Kubernetes course feels like progress. Following along with a Terraform tutorial feels like progress. Copying an LLM’s YAML feels like progress. Then a real cluster fails at 2 a.m. and the feeling evaporates, because none of those activities built a durable model that can be retrieved under pressure.</p>
+<p>The Math Academy Way is blunt about this: <strong>learning is a change in long-term memory, not a feeling of comprehension</strong>. If you cannot reproduce the thing cold, without notes, you have not learned it — you have only rented it.</p>
+<p>DevOps has an extra trap: the tool surface changes fast, so it is easy to spend years collecting tools instead of building the stable mental models underneath them. The result is a résumé full of logos and a head full of fog.</p>
+<p>The fix is not “study harder.” It is to study <strong>at the right altitude, in the right order, with the right verification</strong>.</p>
+<hr>
+<h2 id="the-math-academy-way-distilled">The Math Academy Way, distilled</h2>
+<p>Here are the principles from the PDF that matter most, translated for our domain. I will use them as the design rules for the rest of this post.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Principle</th><th>What it means in Math Academy</th><th>What it means for DevOps/SRE</th></tr></thead><tbody><tr><td><strong>Knowledge graph</strong></td><td>Thousands of topics linked by prerequisites. A course is just a slice of the graph.</td><td>Skills are nodes; prerequisites are edges. A job title is not a curriculum; it is a slice of a larger graph.</td></tr><tr><td><strong>Knowledge frontier</strong></td><td>Teach at the edge of what the student has mastered (the zone of proximal development).</td><td>Attempt labs you are <em>almost</em> ready for. Too easy is rehearsal; too hard is noise.</td></tr><tr><td><strong>Mastery learning</strong></td><td>Demonstrate proficiency before advancing.</td><td>Do not touch Kubernetes until Linux, networking, and containers are solid enough to debug.</td></tr><tr><td><strong>Granular knowledge points</strong></td><td>Each topic is broken into small, scaffolded pieces with worked examples.</td><td>Break skills into <strong>Verifiable Units</strong>: one command, one artifact, one failure mode, one check.</td></tr><tr><td><strong>Deliberate practice</strong></td><td>Effortful repetition at the edge, with feedback, targeting specific weaknesses.</td><td>Break/fix labs, timed incident drills, and blank-terminal rebuilds — not passive tutorials.</td></tr><tr><td><strong>Automaticity</strong></td><td>Low-level skills become effortless, freeing working memory for higher-level reasoning.</td><td>Command fluency in Linux, Git, <code>kubectl</code>, <code>terraform</code>, and the shell is not optional. Syntax should not consume your diagnosis budget.</td></tr><tr><td><strong>Layering</strong></td><td>New topics exercise and reinforce earlier topics.</td><td>Every project must reuse the previous layer. A K8s project should exercise Linux, networking, containers, and CI/CD.</td></tr><tr><td><strong>Non-interference</strong></td><td>Do not learn confusable concepts together; space them out.</td><td>Do not learn Docker and Podman at once, or Terraform and Pulumi, or Istio and Linkerd. Learn one deeply, then the other.</td></tr><tr><td><strong>Spaced repetition</strong></td><td>Review at increasing intervals so knowledge is retained indefinitely.</td><td>Redo labs cold after days and weeks. Keep an incident card deck. Rebuild from memory.</td></tr><tr><td><strong>Interleaving</strong></td><td>Mix problem types so you learn to choose the right method, not just execute it.</td><td>Mixed-topic incident drills teach diagnosis: “Is this DNS, TLS, CPU, or a bad deploy?”</td></tr><tr><td><strong>Retrieval practice</strong></td><td>Test yourself; do not reread.</td><td>Close the tutorial. Rebuild the cluster. Fix the broken server with no notes. Explain it out loud.</td></tr><tr><td><strong>Targeted remediation</strong></td><td>When stuck, identify and repair the exact prerequisite.</td><td>When a lab fails, do not redo the whole course. Find the missing prerequisite — often DNS, permissions, or state.</td></tr><tr><td><strong>Cognitive load / scaffolding</strong></td><td>Worked examples first, then gradually remove support.</td><td>Tutorial → checklist → hints → blank terminal. The blank terminal is the real exam.</td></tr><tr><td><strong>Gamification / accountability</strong></td><td>XP, streaks, leaderboards, and closed loopholes.</td><td>Use the platforms’ points and badges, but tie progress to verified gates. Do not game the check script.</td></tr></tbody></table>
+<p>The deepest idea is the <strong>knowledge graph</strong>. A course is a path through the graph. A certification is a set of nodes someone decided to test. A job is a set of nodes someone is willing to pay for. Mastery is not “finishing the graph.” It is being able to <strong>traverse it fluently</strong> — to know what you know, what you do not, and what a failure implies.</p>
+<hr>
+<h2 id="the-devopssre-way-same-science-different-substrate">The DevOps/SRE Way: same science, different substrate</h2>
+<p>Math and DevOps are not identical, and pretending otherwise would produce a bad curriculum. There are three important differences.</p>
+<h3 id="1-the-core-is-stable-the-surface-is-volatile">1. The core is stable; the surface is volatile</h3>
+<p>Calculus does not release a new version every quarter. Kubernetes does. So the graph has two zones:</p>
+<ul>
+<li><strong>The stable core:</strong> Linux, networking, distributed systems, reliability theory, security fundamentals, debugging method, communication.</li>
+<li><strong>The volatile surface:</strong> tools, vendors, versions, certifications, dashboards.</li>
+</ul>
+<p>Build mastery on the stable core. Learn the volatile surface <strong>just in time</strong>, and expect to relearn it. This is the single most important adaptation of the Math Academy model.</p>
+<h3 id="2-the-unit-of-assessment-is-a-system-not-an-answer">2. The unit of assessment is a system, not an answer</h3>
+<p>Math Academy verifies with questions. DevOps verifies with <strong>reproducible outcomes on real machines</strong>: a service that serves traffic, a pipeline that deploys and rolls back, a cluster that survives a node failure, an alert that fires for the right reason.</p>
+<p>So the atomic unit of learning is not a flashcard. It is a <strong>Verifiable Unit (VU)</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>VU: Repair a service that is running but unreachable</span></span>
+<span class="line"><span>Prerequisites: processes, sockets, systemd, firewall, DNS</span></span>
+<span class="line"><span>Artifact: a working `curl` response and a systemd unit that survives reboot</span></span>
+<span class="line"><span>Check: `systemctl is-active`, `ss -lntp`, `curl -v localhost:8080`</span></span>
+<span class="line"><span>Failure modes: wrong bind address, firewall drop, missing env var, stale DNS</span></span>
+<span class="line"><span>Encompassed by: "Checkout is down" incident (L5.3)</span></span></code></pre>
+<h3 id="3-incidents-are-the-multi-part-problems">3. Incidents are the multi-part problems</h3>
+<p>Math Academy’s multi-part problems pull together many earlier skills into one challenging context. In DevOps, that context already exists: <strong>an incident</strong>.</p>
+<p>A single “checkout is down” incident can encompass Linux (disk full, OOM), networking (DNS, TLS, load balancer), containers (image pull, crash loop), Kubernetes (scheduling, probes, service endpoints), observability (metric, log, trace), and communication (incident command, status update, postmortem). That is why incident-shaped practice is the highest-leverage activity in this domain.</p>
+<h3 id="the-mastery-gate-r2d2t">The Mastery Gate: R2D2T</h3>
+<p>For every meaningful node, require five proofs. I call this the <strong>R2D2T gate</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Proof</th><th>Question</th><th>DevOps example</th></tr></thead><tbody><tr><td><strong>Recall</strong></td><td>Can you explain it from memory, without notes?</td><td>Explain the path of an HTTP request from browser to pod.</td></tr><tr><td><strong>Reproduce</strong></td><td>Can you do it from a blank environment?</td><td>Build the cluster, deploy the app, and expose it with TLS.</td></tr><tr><td><strong>Diagnose</strong></td><td>Can you fix a deliberately broken version?</td><td>Find why the Service has no endpoints.</td></tr><tr><td><strong>Transfer</strong></td><td>Can you apply it in a new context?</td><td>Do it on a different cloud or with a different ingress controller.</td></tr><tr><td><strong>Teach</strong></td><td>Can you write a runbook or teach it to someone else?</td><td>Write a 1-page postmortem and a preventive action.</td></tr></tbody></table>
+<p>If you cannot pass all five, you have not mastered the node. You have only visited it.</p>
+<h3 id="find-your-frontier-a-diagnostic">Find your frontier: a diagnostic</h3>
+<p>Before you start, place yourself. Do not begin at “the beginning” if you already have foundations; do not jump ahead if you do not.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Can you do this, cold?</th><th>If no, start at</th></tr></thead><tbody><tr><td>Navigate a Linux filesystem, pipe commands, edit with vim/nano, commit and push with Git</td><td>L0 — Soil</td></tr><tr><td>Explain what happens between typing a URL and seeing a page (DNS → TCP → TLS → HTTP)</td><td>L1 — Roots</td></tr><tr><td>Find which process owns a port, read <code>journalctl</code>, write a systemd unit, fix a full disk</td><td>L1 — Roots</td></tr><tr><td>Write a Dockerfile, debug a container that exits immediately, explain namespaces/cgroups</td><td>L2 — Trunk</td></tr><tr><td>Provision a VPC, VM, database, and load balancer with Terraform, and explain state</td><td>L2 — Trunk</td></tr><tr><td>Build a CI pipeline that tests, builds, scans, deploys, and rolls back</td><td>L2 — Trunk</td></tr><tr><td>Deploy to Kubernetes, debug <code>CrashLoopBackOff</code>, expose a Service, read events</td><td>L3 — Branches</td></tr><tr><td>Define an SLI/SLO and write a multi-window burn-rate alert</td><td>L4 — Canopy</td></tr><tr><td>Explain replication, consensus, and a cascading failure</td><td>L4 — Canopy</td></tr><tr><td>Design a multi-region failover and defend the tradeoffs</td><td>L5 — Fruit</td></tr></tbody></table>
+<p>Your frontier is the <strong>lowest layer where the answer is “no.”</strong> Start there. Not at the layer that looks most impressive on LinkedIn.</p>
+<hr>
+<h2 id="the-knowledge-tree">The knowledge tree</h2>
+<p>Here is the map. It is intentionally a tree, not a syllabus. The spine below is a default traversal; the graph is the source of truth, and you may branch when the prerequisites are satisfied.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>DEVOPS / SRE MASTERY</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── L0. SOIL — Environment literacy</span></span>
+<span class="line"><span>│   ├── 0.1 Terminal, filesystem, pipes, processes</span></span>
+<span class="line"><span>│   ├── 0.2 Editor and shell configuration</span></span>
+<span class="line"><span>│   ├── 0.3 Git, GitHub, branches, pull requests</span></span>
+<span class="line"><span>│   ├── 0.4 HTTP and the request lifecycle</span></span>
+<span class="line"><span>│   └── 0.5 Markdown, docs, diagrams, writing</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── L1. ROOTS — Linux and networking (the non-negotiables)</span></span>
+<span class="line"><span>│   ├── 1.1 Processes, signals, /proc, resource inspection</span></span>
+<span class="line"><span>│   ├── 1.2 Files, permissions, users, ACLs</span></span>
+<span class="line"><span>│   ├── 1.3 systemd, services, timers, targets</span></span>
+<span class="line"><span>│   ├── 1.4 Logs, journald, log rotation</span></span>
+<span class="line"><span>│   ├── 1.5 Packages, repositories, dependencies</span></span>
+<span class="line"><span>│   ├── 1.6 Storage, filesystems, LVM, disk pressure</span></span>
+<span class="line"><span>│   ├── 1.7 Boot, kernel basics, modules, sysctl</span></span>
+<span class="line"><span>│   ├── 1.8 TCP/IP, ports, sockets, DNS</span></span>
+<span class="line"><span>│   ├── 1.9 HTTP, HTTPS, TLS, certificates</span></span>
+<span class="line"><span>│   ├── 1.10 SSH, keys, bastions, port forwarding</span></span>
+<span class="line"><span>│   ├── 1.11 Routing, NAT, firewalls (iptables/nftables)</span></span>
+<span class="line"><span>│   └── 1.12 Load balancing, reverse proxies, caching</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── L2. TRUNK — Build and ship</span></span>
+<span class="line"><span>│   ├── 2.1 Scripting: Bash, then Python (later Go)</span></span>
+<span class="line"><span>│   ├── 2.2 Containers: images, layers, runtimes</span></span>
+<span class="line"><span>│   ├── 2.3 Container networking, volumes, security</span></span>
+<span class="line"><span>│   ├── 2.4 Cloud foundations: one provider, deeply</span></span>
+<span class="line"><span>│   ├── 2.5 IAM, identity, least privilege</span></span>
+<span class="line"><span>│   ├── 2.6 VPC/networking, compute, storage, managed DBs</span></span>
+<span class="line"><span>│   ├── 2.7 Infrastructure as Code: Terraform/OpenTofu</span></span>
+<span class="line"><span>│   ├── 2.8 Configuration management: Ansible</span></span>
+<span class="line"><span>│   ├── 2.9 CI/CD: pipelines, artifacts, environments</span></span>
+<span class="line"><span>│   ├── 2.10 Registries, packaging, versioning</span></span>
+<span class="line"><span>│   └── 2.11 Secrets, config, environment promotion</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── L3. BRANCHES — Run and observe</span></span>
+<span class="line"><span>│   ├── 3.1 Kubernetes core: API, objects, control loop</span></span>
+<span class="line"><span>│   ├── 3.2 Workloads, scheduling, requests/limits, probes</span></span>
+<span class="line"><span>│   ├── 3.3 Services, Ingress, DNS, CNI, NetworkPolicy</span></span>
+<span class="line"><span>│   ├── 3.4 Storage, StatefulSets, PV/PVC, state</span></span>
+<span class="line"><span>│   ├── 3.5 Troubleshooting: events, logs, exec, debug</span></span>
+<span class="line"><span>│   ├── 3.6 Helm, Kustomize, packaging</span></span>
+<span class="line"><span>│   ├── 3.7 GitOps: Argo CD, Flux</span></span>
+<span class="line"><span>│   ├── 3.8 Metrics: Prometheus, exporters, PromQL</span></span>
+<span class="line"><span>│   ├── 3.9 Logs and traces: OpenTelemetry, Loki, Jaeger</span></span>
+<span class="line"><span>│   ├── 3.10 Dashboards and alerting: Grafana, burn rates</span></span>
+<span class="line"><span>│   ├── 3.11 Security and supply chain: CKS, Trivy, signing</span></span>
+<span class="line"><span>│   └── 3.12 Policy as code: Kyverno, OPA/Gatekeeper</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── L4. CANOPY — Reliability and systems</span></span>
+<span class="line"><span>│   ├── 4.1 SLI/SLO, error budgets, alerting philosophy</span></span>
+<span class="line"><span>│   ├── 4.2 Incident command, on-call, runbooks</span></span>
+<span class="line"><span>│   ├── 4.3 Blameless postmortems, learning, action items</span></span>
+<span class="line"><span>│   ├── 4.4 Toil, automation economics, prioritization</span></span>
+<span class="line"><span>│   ├── 4.5 Capacity planning, load testing, performance</span></span>
+<span class="line"><span>│   ├── 4.6 Distributed systems: replication, consensus, failure</span></span>
+<span class="line"><span>│   ├── 4.7 Data: databases, queues, caches, consistency</span></span>
+<span class="line"><span>│   ├── 4.8 Chaos engineering and game days</span></span>
+<span class="line"><span>│   ├── 4.9 Platform engineering and developer experience</span></span>
+<span class="line"><span>│   └── 4.10 AI-era operations: LLM observability, agents, guardrails</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>└── L5. FRUIT — Mastery proofs</span></span>
+<span class="line"><span>    ├── 5.1 The Hard Way cluster</span></span>
+<span class="line"><span>    ├── 5.2 Production-grade platform</span></span>
+<span class="line"><span>    ├── 5.3 Incident-response portfolio</span></span>
+<span class="line"><span>    ├── 5.4 Open-source contribution</span></span>
+<span class="line"><span>    ├── 5.5 Design review and architecture defense</span></span>
+<span class="line"><span>    └── 5.6 Teach, write, mentor</span></span></code></pre>
+<p>Each layer unlocks the next. But the arrows are not strictly linear: once you have the prerequisites for a node, you can take it. That is the point of a graph.</p>
+<hr>
+<h2 id="build-your-own-graph-the-node-card">Build your own graph: the node card</h2>
+<p>You do not need a 60-node graph on day one. You need a <strong>card</strong> for every skill you are currently trying to own. Write one card per node in a plain Markdown file (or Obsidian/Logseq if you prefer). The act of writing the card is itself retrieval practice.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Node: Kubernetes Service has no endpoints</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Prerequisites</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Linux processes and sockets (1.1)</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> TCP/IP and DNS (1.8)</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Container networking (2.3)</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Kubernetes Services and selectors (3.3)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Key prerequisite for remediation</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Label/selector matching, readiness probes</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Artifact</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> A Service that routes traffic to a healthy pod, verified from inside the cluster</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Verification</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#79B8FF"> `kubectl get endpoints &#x3C;svc>`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#79B8FF"> `kubectl get pods --show-labels`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#79B8FF"> `kubectl describe svc &#x3C;svc>`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#79B8FF"> `kubectl exec ... -- nslookup &#x3C;svc>`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#79B8FF"> `kubectl logs`</span><span style="color:#E1E4E8"> on the failing pod</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Failure modes</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Selector mismatch</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Readiness probe failing</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Wrong targetPort</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> NetworkPolicy dropping traffic</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> CoreDNS down</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Encompassed by</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> "Checkout is down" incident (5.3)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Gate</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> R2D2T: recall the lookup path, reproduce a working Service,</span></span>
+<span class="line"><span style="color:#E1E4E8">  diagnose a broken one, transfer to a different namespace,</span></span>
+<span class="line"><span style="color:#E1E4E8">  and teach it in a runbook.</span></span></code></pre>
+<p>When you have 20–30 of these cards, you have a personal knowledge graph. When you fail a lab, open the card and repair the <strong>key prerequisite</strong>, not the whole subject. That is targeted remediation in practice.</p>
+<p>Prune the graph as you go. Some nodes collapse into others. Some tools become irrelevant. The stable core stays; the volatile surface churns. That is normal, and it is the point.</p>
+<hr>
+<h2 id="the-spine-what-to-start-with-and-what-comes-next">The spine: what to start with, and what comes next</h2>
+<p>If you want a default traversal, use this. It is ordered by prerequisites, not by calendar. Treat each step as a <strong>gate</strong>, not a week.</p>
+<h3 id="step-0--the-soil">Step 0 — The soil</h3>
+<ul>
+<li><strong>Read:</strong> <a href="https://missing.csail.mit.edu/">MIT’s The Missing Semester</a> (shell, command-line environment, Git, debugging). Skim the HTTP chapter of any networking primer.</li>
+<li><strong>Do:</strong> <a href="https://overthewire.org/wargames/bandit/">OverTheWire Bandit</a> levels 0–15, <a href="https://learngitbranching.js.org/">Learn Git Branching</a>, and create a GitHub repository with a real README.</li>
+<li><strong>Gate:</strong> From a blank terminal, create a repo, branch, commit, push, and explain what a branch is. No notes.</li>
+<li><strong>Unlocks:</strong> everything.</li>
+</ul>
+<h3 id="step-1--linux-roots">Step 1 — Linux roots</h3>
+<ul>
+<li><strong>Read:</strong> <em>How Linux Works</em> (Brian Ward), chapters 1–4, 6, 8–9. Use the <a href="https://linuxupskillchallenge.org/">Linux Upskill Challenge</a> as a structured companion.</li>
+<li><strong>Do:</strong> SadServers, filter <strong>Linux &#x26; Bash → Easy → Fix</strong>. Then Killercoda’s Linux and LFCS scenarios. Do not peek at solutions.</li>
+<li><strong>Gate:</strong> On a fresh VM: create a user, set permissions, write a systemd service, rotate logs, find the process on a port, and fix a full disk. R2D2T.</li>
+<li><strong>Unlocks:</strong> containers, cloud, Kubernetes.</li>
+</ul>
+<h3 id="step-2--networking-roots">Step 2 — Networking roots</h3>
+<ul>
+<li><strong>Read:</strong> <em>Computer Networking: A Top-Down Approach</em> (Kurose &#x26; Ross), chapters 1–4. For practical depth, <em>High Performance Browser Networking</em> (free at <a href="https://hpbn.co">hpbn.co</a>) chapters 1–2.</li>
+<li><strong>Do:</strong> SwitchLab’s <strong>CCNA Network Operator</strong> path: Networking Basics → Meet the CLI → CLI + Switching → Switching → Routing → Security. Then Linux networking labs on Killercoda.</li>
+<li><strong>Gate:</strong> Explain and demonstrate DNS resolution, the TCP handshake, the TLS handshake, an HTTP request, a reverse proxy, and a firewall rule. Use <code>dig</code>, <code>curl -v</code>, <code>openssl s_client</code>, <code>ss</code>, and <code>tcpdump</code>.</li>
+<li><strong>Unlocks:</strong> Kubernetes networking, service mesh, load balancing, security.</li>
+</ul>
+<h3 id="step-3--scripting-and-automation">Step 3 — Scripting and automation</h3>
+<ul>
+<li><strong>Read:</strong> The Bash Guide; <em>Automate the Boring Stuff with Python</em> (Al Sweigart) or <em>Python for DevOps</em>.</li>
+<li><strong>Do:</strong> <a href="https://exercism.org/">Exercism</a> Bash and Python tracks. Write a backup script, a log-rotation script, and an API client with retries and structured logs.</li>
+<li><strong>Gate:</strong> Write a Python tool that calls an API, retries with exponential backoff, logs JSON, handles errors, and has tests. No autocomplete, no LLM.</li>
+<li><strong>Unlocks:</strong> IaC, CI/CD, operators, platform tooling.</li>
+</ul>
+<h3 id="step-4--containers">Step 4 — Containers</h3>
+<ul>
+<li><strong>Read:</strong> Docker’s official docs; <em>Docker Deep Dive</em> (Nigel Poulton). For internals, <a href="https://labs.iximiuz.com/">iximiuz Labs</a>.</li>
+<li><strong>Do:</strong> Killercoda Docker scenarios; DevOpsLabs container rooms; SadServers Docker and Podman scenarios.</li>
+<li><strong>Gate:</strong> Build a multi-stage image, run a three-service Compose stack, debug a container that exits immediately, shrink the image, and explain namespaces, cgroups, and overlay filesystems.</li>
+<li><strong>Unlocks:</strong> Kubernetes, CI/CD, cloud-native.</li>
+</ul>
+<h3 id="step-5--cloud-foundations">Step 5 — Cloud foundations</h3>
+<ul>
+<li><strong>Read:</strong> One provider’s official guide. Pick <strong>one</strong>: AWS Solutions Architect Associate, Azure AZ-104, or GCP Associate Cloud Engineer. Read the IAM, VPC, compute, storage, and billing chapters twice.</li>
+<li><strong>Do:</strong> Use the free tier. Build a VPC with public and private subnets, a VM, a managed database, and a load balancer. Then run <a href="https://github.com/RhinoSecurityLabs/cloudgoat">CloudGoat</a> for a security reality check.</li>
+<li><strong>Gate:</strong> Provision the environment, explain the bill, and explain the blast radius of a compromised credential.</li>
+<li><strong>Unlocks:</strong> Terraform, Kubernetes on cloud, SRE.</li>
+</ul>
+<h3 id="step-6--infrastructure-as-code">Step 6 — Infrastructure as Code</h3>
+<ul>
+<li><strong>Read:</strong> <em>Terraform Up &#x26; Running</em> (Yevgeniy Brikman); the official Terraform/OpenTofu docs.</li>
+<li><strong>Do:</strong> Killercoda OpenTofu/Terraform scenarios; SadServers IaC scenarios. Rebuild Step 5 entirely in code. Then create a module.</li>
+<li><strong>Gate:</strong> From zero, <code>terraform apply</code> the full environment. Detect drift, fix it, inspect state, and explain why state is the source of truth. No console clicks.</li>
+<li><strong>Unlocks:</strong> reproducible environments, platform engineering.</li>
+</ul>
+<h3 id="step-7--cicd-and-delivery">Step 7 — CI/CD and delivery</h3>
+<ul>
+<li><strong>Read:</strong> <em>Continuous Delivery</em> (Humble &#x26; Farley), chapters 1–5; <em>Accelerate</em> (Forsgren et al.); GitHub Actions or GitLab CI docs.</li>
+<li><strong>Do:</strong> Build a pipeline for your app: lint → test → build → scan → deploy to staging → smoke test → promote. Use SadServers CI/CD scenarios to fix broken pipelines.</li>
+<li><strong>Gate:</strong> A commit triggers a pipeline that deploys to staging, runs a smoke test, and rolls back on failure. Explain every stage and every secret.</li>
+<li><strong>Unlocks:</strong> Kubernetes delivery, GitOps, platform engineering.</li>
+</ul>
+<h3 id="step-8--kubernetes-core">Step 8 — Kubernetes core</h3>
+<ul>
+<li><strong>Read:</strong> Kubernetes docs; <em>Kubernetes Up &#x26; Running</em> (Burns et al.). Follow the <strong>KCNA → CKA → CKAD</strong> sequence if you want certification structure.</li>
+<li><strong>Do:</strong> Killercoda CKA/CKAD scenarios; DevOpsLabs CKA path; then <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way">Kubernetes the Hard Way</a>.</li>
+<li><strong>Gate:</strong> Build a cluster, deploy a three-tier app, expose it with Ingress + TLS, set requests/limits, add probes, roll it back, and debug a <code>CrashLoopBackOff</code> from events and logs. R2D2T.</li>
+<li><strong>Unlocks:</strong> observability, SRE, platform engineering, security.</li>
+</ul>
+<h3 id="step-9--observability">Step 9 — Observability</h3>
+<ul>
+<li><strong>Read:</strong> <em>Site Reliability Engineering</em> (Google), chapters 3–4; <em>The Site Reliability Workbook</em>, chapters 2–5; <em>Observability Engineering</em> (Majors, Fong-Jones, Miranda).</li>
+<li><strong>Do:</strong> Instrument your app with OpenTelemetry, Prometheus, Grafana, and a log/trace backend. Killercoda Prometheus and Grafana scenarios. Load-test it.</li>
+<li><strong>Gate:</strong> Define SLIs and SLOs, build dashboards, write multi-window burn-rate alerts, and show the error budget after a load test.</li>
+<li><strong>Unlocks:</strong> reliability practice, incident response, capacity planning.</li>
+</ul>
+<h3 id="step-10--reliability-practice">Step 10 — Reliability practice</h3>
+<ul>
+<li><strong>Read:</strong> <em>The Site Reliability Workbook</em>; <em>Implementing Service Level Objectives</em> (Alex Hidalgo); <em>The Art of Capacity Planning</em> (Kejariwal &#x26; Allspaw).</li>
+<li><strong>Do:</strong> Run incident drills. Shadow an on-call rotation if you can. Use LitmusChaos or a simple <code>kill</code>/network-partition script for game days.</li>
+<li><strong>Gate:</strong> Run a simulated incident as incident commander. Write a blameless postmortem with action items, and prove the action items closed.</li>
+<li><strong>Unlocks:</strong> senior SRE work, architecture, platform.</li>
+</ul>
+<h3 id="step-11--security-and-supply-chain">Step 11 — Security and supply chain</h3>
+<ul>
+<li><strong>Read:</strong> <em>Building Secure and Reliable Systems</em> (Google); the CKS curriculum. Skim OWASP Top 10.</li>
+<li><strong>Do:</strong> <a href="https://github.com/madhuakula/kubernetes-goat">Kubernetes Goat</a>, CloudGoat, Trivy, Kyverno or OPA, Falco. Scan your own images and manifests.</li>
+<li><strong>Gate:</strong> Harden the cluster, catch and fix a supply-chain vulnerability, and write a policy that blocks a bad deployment.</li>
+<li><strong>Unlocks:</strong> security engineering, platform trust, SRE in regulated environments.</li>
+</ul>
+<h3 id="step-12--distributed-systems">Step 12 — Distributed systems</h3>
+<ul>
+<li><strong>Read:</strong> <em>Designing Data-Intensive Applications</em> (Kleppmann), 2nd edition. Then <em>Database Internals</em> (Petrov) for storage and consensus depth.</li>
+<li><strong>Do:</strong> <a href="https://github.com/donnemartin/system-design-primer">system-design-primer</a> exercises. Design a multi-region service. Inject failures and reason about the outcome.</li>
+<li><strong>Gate:</strong> Design a multi-region service with replication, failover, and a capacity model. Defend the tradeoffs in a mock architecture review.</li>
+<li><strong>Unlocks:</strong> staff-level SRE, architecture, platform strategy.</li>
+</ul>
+<h3 id="step-13--platform-engineering-and-ai-era-operations">Step 13 — Platform engineering and AI-era operations</h3>
+<ul>
+<li><strong>Read:</strong> <em>Team Topologies</em> (Skelton &#x26; Pais); Backstage docs; <em>Observability Engineering</em> 2nd edition’s AI chapters; Google’s AIOps material; MCP docs.</li>
+<li><strong>Do:</strong> Build a golden-path template, a self-service environment, and a developer portal. Deploy an LLM-backed service with observability. Build an agent that proposes remediations with guardrails.</li>
+<li><strong>Gate:</strong> A developer can go from <code>git init</code> to a deployed service without talking to you. Then run an incident where an AI agent proposes a wrong fix; detect it, reject it, and explain the guardrail that should have prevented it.</li>
+<li><strong>Unlocks:</strong> platform ownership, AI-era SRE.</li>
+</ul>
+<h3 id="step-14--mastery-proofs">Step 14 — Mastery proofs</h3>
+<p>Pick at least three:</p>
+<ul>
+<li><strong>The Hard Way cluster</strong> — build Kubernetes from scratch and explain every component.</li>
+<li><strong>Production-grade platform</strong> — IaC, CI/CD, K8s, observability, security, runbooks.</li>
+<li><strong>Incident portfolio</strong> — five postmortems with real fixes.</li>
+<li><strong>Open-source contribution</strong> — a merged PR in a CNCF or infrastructure project.</li>
+<li><strong>Design review</strong> — a written architecture decision record defended in public.</li>
+<li><strong>Teach</strong> — a talk, workshop, or blog series that someone else can follow.</li>
+</ul>
+<p>These are the fruit. They are also the interview.</p>
+<hr>
+<h2 id="the-resource-stack-what-to-use-for-what">The resource stack: what to use for what</h2>
+<p>Do not use one resource for every job. Match the resource to the cognitive job.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Job</th><th>Free option</th><th>Paid option</th><th>When to use</th></tr></thead><tbody><tr><td><strong>Theory and invariants</strong></td><td>Official docs, Google SRE books, MIT Missing Semester</td><td>O’Reilly, print books</td><td>Before and during a node, not instead of practice</td></tr><tr><td><strong>Guided practice</strong></td><td>Killercoda, DevOpsLabs free rooms</td><td>KodeKloud, DevOpsLabs Premium</td><td>When you need a worked example and a safe sandbox</td></tr><tr><td><strong>Break/fix</strong></td><td>SadServers, DevOpsLabs challenges</td><td>SadServers Pro, DevOpsLabs Premium</td><td>When you need diagnosis reps, not instruction</td></tr><tr><td><strong>Exam simulation</strong></td><td>Killercoda free scenarios</td><td>Killer.sh, DevOpsLabs simulators</td><td>After the primitives are solid, not before</td></tr><tr><td><strong>Networking depth</strong></td><td>SwitchLab free labs, Packet Life</td><td>SwitchLab Pro</td><td>When DNS/VLAN/routing/ACL gaps block you</td></tr><tr><td><strong>Projects</strong></td><td>Free-tier cloud, homelab, Kubernetes the Hard Way</td><td>Cloud credits</td><td>Always. This is where layering happens.</td></tr><tr><td><strong>Assessment</strong></td><td>Mock interviews, <code>check.sh</code>, R2D2T gates</td><td>Launch School-style human assessment</td><td>When you need an outside verdict</td></tr><tr><td><strong>Spaced review</strong></td><td>Anki, a personal runbook, incident cards</td><td>—</td><td>Forever</td></tr></tbody></table>
+<p>A practical note on money: at the time of writing, DevOpsLabs is roughly $30/month or $250/year; Killercoda has a free tier and paid tiers starting around $10/month; SadServers has a free tier and Pro around $9/month; SwitchLab is roughly $22/month or $99/year; Launch School’s core is around $199/month with a Capstone income-share agreement. Prices change — verify before subscribing. You do <strong>not</strong> need all of them at once. Start free, add one paid source when a specific gap blocks you.</p>
+<hr>
+<h2 id="how-to-use-each-platform-honestly">How to use each platform honestly</h2>
+<h3 id="devopslabs">DevOpsLabs</h3>
+<p>Use it for <strong>guided rooms and the zero-to-production roadmap</strong>, then for <strong>open challenges</strong> once you have the basics. The challenges are the closest thing to deliberate practice in the product: a broken machine, an incident brief, no instructions.</p>
+<p>Use it <strong>after</strong> you have Linux and networking roots. It is not a substitute for them. The CKA/CKAD simulators are useful, but only after you can already do the work without a simulator.</p>
+<p><strong>Best first move:</strong> the “DevOps, from zero to production” roadmap, then the easiest open challenge. Do not open the walkthrough until you have either fixed it or written a hypothesis about why you cannot.</p>
+<h3 id="killercoda">Killercoda</h3>
+<p>Use it as a <strong>universal sandbox and verification layer</strong>. It is the best free way to get a real shell, a real cluster, or a real tool in seconds. The Check button gives you immediate feedback, which is exactly what deliberate practice needs.</p>
+<p>Use it for <strong>breadth and reps</strong>, not for a single linear curriculum. The quality varies by creator, so treat each scenario as a lab, not as gospel.</p>
+<p><strong>Best first move:</strong> the Linux and Docker scenarios. Then choose the CKA/CKAD/CKS path when you are ready for structure.</p>
+<h3 id="sadservers">SadServers</h3>
+<p>Use it as your <strong>incident gym</strong>. This is where you learn to debug: a service is down, the clock is running, and nobody tells you which layer is broken. The Fix/Do/Hack taxonomy is excellent, and <code>check.sh</code> is inspectable, which means you can learn from the grader instead of guessing.</p>
+<p>Use it <strong>weekly, forever</strong>. Even after you have a job. It is the DevOps equivalent of a daily puzzle.</p>
+<p><strong>Best first move:</strong> filter to Linux &#x26; Bash, Easy, type Fix. Then move to Medium. Then interleave with web servers, databases, Docker, and Kubernetes.</p>
+<h3 id="switchlab">SwitchLab</h3>
+<p>Use it when your networking is the bottleneck. If you cannot explain why a packet takes the path it takes, or why an ACL drops traffic, or how OSPF chooses a route, this is the most direct practice available.</p>
+<p>Do <strong>not</strong> start here if you are weak in Linux. Networking without Linux is a parlor trick; Linux without networking is a dead end. Do both.</p>
+<p><strong>Best first move:</strong> the CCNA Network Operator path, from Networking Basics through Switching to Routing. Treat the automation section as a bridge to DevOps, not a destination.</p>
+<h3 id="launch-school">Launch School</h3>
+<p>Use it if you want <strong>software engineering depth with human assessment</strong>. Its mastery-based philosophy — no skipping assessments, “Not Yet” instead of a fake pass, mastery over time — is the closest thing in this list to the Math Academy ethos.</p>
+<p>But be clear about the trade: it teaches backend/frontend engineering, networking, databases, and (in the Capstone) system design and cloud infrastructure. It does <strong>not</strong> teach Kubernetes, Terraform, CI/CD, observability, or on-call. If your goal is DevOps/SRE, do not expect Launch School to be the whole path. Use it for the engineering foundation, then run the graph above.</p>
+<p>If you already write code professionally, you can borrow the <strong>assessment discipline</strong> without paying for the full core: schedule human-graded mock interviews, write design docs, and get your work reviewed by someone senior.</p>
+<hr>
+<h2 id="the-ai-era-what-changes-what-does-not">The AI era: what changes, what does not</h2>
+<p>This is the part most guides get wrong in both directions. AI is not going to make DevOps obsolete, and it is not going to hand you mastery for free.</p>
+<h3 id="what-llms-are-genuinely-good-at">What LLMs are genuinely good at</h3>
+<ul>
+<li>Explaining concepts at your level, on demand.</li>
+<li>Generating boilerplate: Dockerfiles, Terraform modules, GitHub Actions, YAML.</li>
+<li>Summarizing docs and error messages.</li>
+<li>Suggesting hypotheses during debugging.</li>
+<li>Writing tests, runbooks, and first-draft postmortems.</li>
+<li>Acting as a Socratic tutor that never gets tired.</li>
+</ul>
+<h3 id="what-llms-are-still-bad-at">What LLMs are still bad at</h3>
+<ul>
+<li><strong>Causation versus correlation</strong> in a complex production system.</li>
+<li><strong>Root cause</strong> when the incident is novel, cross-layer, or organizational.</li>
+<li><strong>Your system’s history</strong>, constraints, and political reality.</li>
+<li><strong>Blast radius and accountability</strong>: deciding what an agent may do, and owning the consequence when it is wrong.</li>
+<li><strong>Verification of their own output.</strong> A confident answer is not a correct one.</li>
+</ul>
+<p>The public lessons from 2025–2026 are consistent: AI is excellent at the <strong>80% narrative</strong> of an incident and weak at the <strong>root cause</strong> that matters. It can speed up observation, correlation, and drafting. It cannot be trusted to decide what to change in production without a human who can verify the claim.</p>
+<h3 id="the-verification-gap">The verification gap</h3>
+<p>The bottleneck has moved. It used to be <strong>knowing how to do the task</strong>. Now it is increasingly <strong>specifying the task, verifying the result, and owning the outcome</strong>.</p>
+<p>That is why the fundamentals matter <em>more</em>, not less. If you cannot read the Terraform plan, you cannot supervise the agent that wrote it. If you cannot read a packet capture, you cannot tell whether the “DNS problem” is DNS or a firewall. If you cannot reason about consistency, you cannot catch a plausible but wrong distributed-systems design.</p>
+<p>AI raises the floor. It does not raise the ceiling. The ceiling is judgment, and judgment is built by deliberate practice on real systems.</p>
+<h3 id="the-llm-study-protocol">The LLM study protocol</h3>
+<p>Use AI as a <strong>training partner</strong>, not an oracle. For every study session:</p>
+<ol>
+<li><strong>Predict before prompting.</strong> Write your hypothesis first.</li>
+<li><strong>Ask for a hint, not the answer.</strong> “Give me one clue, not the solution.”</li>
+<li><strong>Reproduce without the model.</strong> Close the chat. Do the task.</li>
+<li><strong>Verify against the system.</strong> Tests, <code>curl</code>, <code>kubectl describe</code>, logs, metrics. The system is the source of truth.</li>
+<li><strong>Ask the model to critique your solution</strong>, not to produce one.</li>
+<li><strong>Write a five-line “why” note.</strong> What broke, what you tried, what fixed it, what you would do differently.</li>
+<li><strong>Schedule a spaced review.</strong> Redo it cold in a week.</li>
+</ol>
+<p>Never let the model’s fluency become your fluency. The test is the blank terminal, not the chat window.</p>
+<h3 id="the-new-skills">The new skills</h3>
+<p>The AI era adds nodes to the graph:</p>
+<ul>
+<li><strong>LLM observability:</strong> latency, cost, drift, hallucination rate, evaluation sets.</li>
+<li><strong>Agent guardrails:</strong> what an agent may read, write, restart, or deploy; blast-radius limits; approval gates.</li>
+<li><strong>Evaluation:</strong> golden datasets, offline evals, canary evals, human review.</li>
+<li><strong>Context engineering:</strong> giving agents structured access to telemetry, runbooks, and architecture via tools like MCP.</li>
+<li><strong>AI incident response:</strong> detecting when the model is confidently wrong, and having a rollback path.</li>
+</ul>
+<p>These are not replacements for Linux, networking, Kubernetes, and SRE. They are <strong>new branches</strong> on the same tree, and they require the same roots.</p>
+<hr>
+<h2 id="the-operating-system-how-to-actually-run-this">The operating system: how to actually run this</h2>
+<p>This is not a timeline. It is a <strong>loop</strong> you run until the gates are passed.</p>
+<h3 id="the-daily-loop-4590-minutes">The daily loop (45–90 minutes)</h3>
+<ol>
+<li><strong>Review (10 min):</strong> Anki or your incident card deck. Retrieval, not rereading.</li>
+<li><strong>Learn (20–30 min):</strong> One node, one worked example, one piece of theory.</li>
+<li><strong>Practice (25–40 min):</strong> One lab or one broken system. No solution peeking.</li>
+<li><strong>Write (5 min):</strong> Five lines: what you tried, what failed, what fixed it, what you learned, what to review.</li>
+</ol>
+<h3 id="the-weekly-loop">The weekly loop</h3>
+<ul>
+<li><strong>One project session:</strong> add a layer to the current project. Reuse previous layers.</li>
+<li><strong>One incident session:</strong> a SadServers or DevOpsLabs challenge, timed.</li>
+<li><strong>One interleaved drill:</strong> mix three topics you have not touched recently. Diagnose, do not just execute.</li>
+<li><strong>One teach-back:</strong> explain a concept to a rubber duck, a friend, or a blog draft.</li>
+<li><strong>One review of failed gates:</strong> what prerequisite was missing?</li>
+</ul>
+<h3 id="the-monthly-loop">The monthly loop</h3>
+<ul>
+<li><strong>A mastery gate:</strong> R2D2T on a node you think you know.</li>
+<li><strong>A portfolio artifact:</strong> a runbook, a postmortem, a README, a diagram.</li>
+<li><strong>A cold rebuild:</strong> rebuild something from scratch with no notes.</li>
+<li><strong>A conversation:</strong> a mock interview, a code review, or an architecture review.</li>
+</ul>
+<h3 id="the-rules-that-keep-you-honest">The rules that keep you honest</h3>
+<ol>
+<li><strong>No solution peeking before a hypothesis.</strong> Write down what you think is wrong first.</li>
+<li><strong>No LLM before a hypothesis.</strong> Same reason.</li>
+<li><strong>No new tool until the current one is automatic.</strong> Non-interference.</li>
+<li><strong>No certification before a project.</strong> The cert is a map, not the territory.</li>
+<li><strong>No blocked practice after the basics.</strong> Interleave.</li>
+<li><strong>No “I watched it” as evidence.</strong> Reproduce it.</li>
+<li><strong>No project that does not break.</strong> If it never fails, you are not learning to operate it.</li>
+<li><strong>No gate without a teach-back.</strong> If you cannot explain it, you do not own it.</li>
+</ol>
+<hr>
+<h2 id="the-capstones-proof-not-participation">The capstones: proof, not participation</h2>
+<p>These are the six artifacts I would want to see from someone who claims mastery. They are also the best interview preparation I know.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Capstone</th><th>Acceptance criteria</th></tr></thead><tbody><tr><td><strong>1. The Hard Way cluster</strong></td><td>Build Kubernetes from scratch. Explain the control plane, kubelet, networking, certificates, and etcd. Rebuild it after destroying it.</td></tr><tr><td><strong>2. Production-grade platform</strong></td><td>One repo: Terraform for infrastructure, CI/CD for delivery, Kubernetes for runtime, Helm/Kustomize for packaging, observability, secrets, and runbooks. One command to provision, one to deploy, one to roll back.</td></tr><tr><td><strong>3. Incident portfolio</strong></td><td>Five real or simulated incidents. Each has a timeline, a root cause, a detection gap, a fix, and a preventive action that closed. At least one must be a false lead you initially chased.</td></tr><tr><td><strong>4. Open-source contribution</strong></td><td>A merged PR in a CNCF or infrastructure project. It can be docs, tests, or code. The point is to work in someone else’s system.</td></tr><tr><td><strong>5. Design review</strong></td><td>A written architecture decision record for a multi-region service, with SLOs, failure modes, capacity, cost, and security. Defend it in a mock review.</td></tr><tr><td><strong>6. Teach</strong></td><td>A talk, workshop, or blog series that takes someone from zero to a working system. The test is whether they can follow it without you.</td></tr></tbody></table>
+<p>If you can do these six, you are not “certified.” You are <strong>operational</strong>.</p>
+<hr>
+<h2 id="how-to-know-you-are-ready">How to know you are ready</h2>
+<h3 id="the-junior--mid--senior-ladder">The junior / mid / senior ladder</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Dimension</th><th>Junior</th><th>Mid</th><th>Senior / SRE</th></tr></thead><tbody><tr><td>Scope</td><td>One service, reactive</td><td>One service, proactive</td><td>Multiple services and architecture</td></tr><tr><td>SLOs</td><td>Knows the concept</td><td>Owns SLIs, SLOs, and alerts</td><td>Negotiates targets and designs org-wide frameworks</td></tr><tr><td>Incidents</td><td>Follows a runbook</td><td>Reliable responder</td><td>Incident commander; writes the postmortem leadership reads</td></tr><tr><td>Toil</td><td>Automates a script</td><td>Automates a recurring task</td><td>Eliminates org-wide toil</td></tr><tr><td>Design</td><td>Debugs a service</td><td>Debugs and designs</td><td>Authors failover, capacity models, reliability reviews</td></tr><tr><td>AI</td><td>Uses it to learn</td><td>Uses it to accelerate</td><td>Designs guardrails, evals, and autonomy policy</td></tr><tr><td>Mentorship</td><td>Shadows</td><td>Helps peers</td><td>Mentors, calibrates on-call, raises the bar</td></tr></tbody></table>
+<p>The plateau is real: excellent reactive work with no proactive track record. Promotion is won by <strong>preventing the page</strong>, not by heroics during it.</p>
+<h3 id="the-left-alone-with-production-test">The “left alone with production” test</h3>
+<p>Can you be given a service, a cloud account, and an on-call rotation — and be trusted to:</p>
+<ul>
+<li>Deploy it without breaking it?</li>
+<li>Notice when it is degrading before customers do?</li>
+<li>Diagnose a failure across Linux, network, container, and application layers?</li>
+<li>Communicate clearly during an incident?</li>
+<li>Write a postmortem that changes something?</li>
+<li>Know when to roll back, when to escalate, and when to do nothing?</li>
+</ul>
+<p>If yes, you are ready. If not, find the missing node and gate it.</p>
+<hr>
+<h2 id="the-ten-rules">The ten rules</h2>
+<p>If you remember nothing else, remember these:</p>
+<ol>
+<li><strong>The graph is the curriculum; the course is a path.</strong></li>
+<li><strong>Mastery before motion.</strong> Do not advance on familiarity.</li>
+<li><strong>Practice at the edge.</strong> Too easy is rehearsal; too hard is noise.</li>
+<li><strong>Verify with the system, not the model.</strong> The terminal is the truth.</li>
+<li><strong>Incidents are the multi-part problems.</strong> Diagnose, do not just execute.</li>
+<li><strong>Space it, interleave it, retrieve it.</strong> Redo it cold.</li>
+<li><strong>Strip the scaffolding.</strong> The blank terminal is the exam.</li>
+<li><strong>Layer everything.</strong> Every project reuses the last layer.</li>
+<li><strong>Remediate the prerequisite, not the symptom.</strong> DNS is usually DNS until it is not.</li>
+<li><strong>Teach it to prove it.</strong> If you cannot explain it, you do not own it.</li>
+</ol>
+<hr>
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<p><strong>Learning science</strong></p>
+<ul>
+<li>Justin Skycak, <em>The Math Academy Way</em> — <a href="https://www.justinmath.com/files/the-math-academy-way.pdf">the PDF</a></li>
+<li><em>Make It Stick</em> (Brown, Roediger, McDaniel)</li>
+<li><em>Peak</em> (Ericsson &#x26; Pool)</li>
+</ul>
+<p><strong>Linux, networking, and systems</strong></p>
+<ul>
+<li><em>How Linux Works</em> (Brian Ward)</li>
+<li><em>UNIX and Linux System Administration Handbook</em> (Nemeth et al.)</li>
+<li><em>The Linux Programming Interface</em> (Michael Kerrisk)</li>
+<li><em>Computer Networking: A Top-Down Approach</em> (Kurose &#x26; Ross)</li>
+<li><em>TCP/IP Illustrated, Volume 1</em> (Stevens)</li>
+<li><em>Systems Performance</em> (Brendan Gregg)</li>
+<li><em>BPF Performance Tools</em> (Brendan Gregg)</li>
+<li><a href="https://missing.csail.mit.edu/">MIT Missing Semester</a></li>
+<li><a href="https://hpbn.co">High Performance Browser Networking</a></li>
+</ul>
+<p><strong>DevOps, SRE, and reliability</strong></p>
+<ul>
+<li><em>Site Reliability Engineering</em> and <em>The Site Reliability Workbook</em> — <a href="https://sre.google/books/">free at sre.google</a></li>
+<li><em>Building Secure and Reliable Systems</em> (Google)</li>
+<li><em>Implementing Service Level Objectives</em> (Alex Hidalgo)</li>
+<li><em>The Art of Capacity Planning</em> (Kejariwal &#x26; Allspaw)</li>
+<li><em>Observability Engineering</em> (Majors, Fong-Jones, Miranda)</li>
+<li><em>The Phoenix Project</em>, <em>The DevOps Handbook</em>, <em>Accelerate</em> (Gene Kim et al.)</li>
+<li><em>Continuous Delivery</em> (Humble &#x26; Farley)</li>
+<li><em>Designing Data-Intensive Applications</em> (Martin Kleppmann)</li>
+<li><em>Database Internals</em> (Alex Petrov)</li>
+<li><em>Team Topologies</em> (Skelton &#x26; Pais)</li>
+</ul>
+<p><strong>Hands-on</strong></p>
+<ul>
+<li><a href="https://devopslabs.dev/">DevOpsLabs</a></li>
+<li><a href="https://killercoda.com/">Killercoda</a></li>
+<li><a href="https://sadservers.com/">SadServers</a></li>
+<li><a href="https://switchlab.dev/">SwitchLab</a></li>
+<li><a href="https://kodekloud.com/">KodeKloud</a></li>
+<li><a href="https://labs.iximiuz.com/">iximiuz Labs</a></li>
+<li><a href="https://github.com/kelseyhightower/kubernetes-the-hard-way">Kubernetes the Hard Way</a></li>
+<li><a href="https://github.com/madhuakula/kubernetes-goat">Kubernetes Goat</a></li>
+<li><a href="https://github.com/RhinoSecurityLabs/cloudgoat">CloudGoat</a></li>
+<li><a href="https://overthewire.org/wargames/">OverTheWire</a></li>
+<li><a href="https://linuxupskillchallenge.org/">Linux Upskill Challenge</a></li>
+<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+</ul>
+<p><strong>Roadmaps and communities</strong></p>
+<ul>
+<li><a href="https://roadmap.sh/devops">roadmap.sh DevOps</a></li>
+<li><a href="https://landscape.cncf.io">CNCF Landscape</a></li>
+<li><a href="https://contribute.cncf.io/">CNCF Contributors</a></li>
+<li><a href="https://github.com/bregman-arie/devops-exercises">bregman-arie/devops-exercises</a></li>
+<li><a href="https://github.com/bregman-arie/devops-sre-interviews">bregman-arie/devops-sre-interviews</a></li>
+<li><a href="https://github.com/donnemartin/system-design-primer">system-design-primer</a></li>
+</ul>
+<p><strong>Certifications</strong></p>
+<ul>
+<li>Linux Foundation / CNCF: LFCS, KCNA, CKA, CKAD, CKS, PCA, ICA, CCA, CAPA, CGOA, OTCA, CNPA, CNPE.</li>
+<li>Cloud: AWS Solutions Architect / SysOps / DevOps Professional; Azure AZ-104 / AZ-400; GCP Associate Cloud Engineer / Professional Cloud DevOps Engineer.</li>
+<li>Treat certifications as <strong>maps and forcing functions</strong>, not as proof of mastery. Pair every cert with a project.</li>
+</ul>
+<hr>
+<h2 id="closing-the-tree-not-the-treadmill">Closing: the tree, not the treadmill</h2>
+<p>The reason so many people burn out learning DevOps is that they mistake the treadmill for the mountain. There is always another tool, another certification, another tutorial. The treadmill never ends, and it never takes you anywhere.</p>
+<p>The tree is different. It has roots, a trunk, branches, a canopy, and fruit. You can see where you are. You can see what you are missing. You can choose the next node because it is on your frontier, not because it is trending.</p>
+<p>And in the AI era, that is the real advantage. The model can generate the YAML. It can summarize the docs. It can suggest the fix. But it cannot build your mental model, verify the outcome on your system, or own the consequence when production breaks.</p>
+<p>That part is still yours. The tree is how you get ready for it.</p>
+<p>Start at your frontier. Pass the gate. Then climb.</p> </article>  <section id="comments"> <script async src="https://utteranc.es/client.js" repo="OWNER/REPO" issue-term="pathname" theme="github-light" crossorigin="anonymous"></script> <p style="font-size:0.9rem;color:#666;margin-top:0.5rem;">
+Install Utterances on the repository and set `site.utterancesRepo` in `src/data/site.ts`.
+</p> </section>  </main> <footer class="site-footer"> <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;"> <div>
+&copy; 2026 Your Name — <span style="color:#9fb1c9">A blog hosted on GitHub Pages (Astro + TypeScript)</span> </div> <div style="margin-top:.5rem">
+Built with Astro • <a href="/rss.xml">RSS</a> </div> </div> </footer> </div> </body></html>
